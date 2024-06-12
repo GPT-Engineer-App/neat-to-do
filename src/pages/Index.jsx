@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Container,
   VStack,
@@ -83,6 +84,13 @@ const Index = () => {
             ))
           )}
         </VStack>
+        <Box pt={4}>
+          <Link to="/about-us">
+            <Button colorScheme="teal" variant="link">
+              About Us
+            </Button>
+          </Link>
+        </Box>
       </VStack>
     </Container>
   );
